@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank">"https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"</script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Family Member Recognizing</title>
+</head>
+<body>
+    <center>
+
+        <h1 class="btn btn-default" id="heading">Recognizing Family Members</h1>
+
+        <h2>List of People Included:</h2>
+        <br>    
+
+        <b id="list">
+            <hr>
+            <h3>Me</h3>
+            <hr>
+            <h3>Mother</h3>
+            <hr>
+            <h3>Father</h3>
+            <hr>
+        </b>
+
+        <br><br>
+
+        <h2>Live Webcam:</h2>
+
+        <br>
+        <div id="camera"></div>
+
+        <br>
+
+        <h2>Captured Image:</h2>
+        <br>
+        <div id="result"></div>
+
+        <br><br>
+
+        <button onclick="recognize();">Capture</button>
+
+        <br><br><br><br><Br><br><br><br>
+
+        <div class="down">
+            <h3>Family Member: <span id="object"></span></h3>
+            <h3>Confidence: <span id="accuracy"></span></h3>
+        </div>
+    </center>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
